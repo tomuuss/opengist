@@ -16,35 +16,16 @@ jobs:
       BRANCH_NAME: auto-dependency-upgrades
     steps:
       - uses: actions/checkout@v3
-        with:
-          # [Optional] Use a separate key to automatically execute checks on the resulting PR
-          # https://github.com/peter-evans/create-pull-request/blob/main/docs/concepts-guidelines.md#triggering-further-workflow-runs
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
-
+        
       # START PYTHON DEPENDENCIES
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-go@v4
         with:
-          python-version: "3.10"
-          cache: pip
-      - name: Upgrade Python dependencies
+          go-version: "1.20"
+      - name: Upgrade Go dependencies
         # ADD YOUR CUSTOM DEPENDENCY UPGRADE COMMANDS BELOW
         run: |
-          pip install -U pip pip-tools
-          pip-compile --upgrade -o requirements/prod.txt requirements/prod.in
-          pip-compile --upgrade -o requirements/dev.txt requirements/dev.in
+          go get -u
       # END PYTHON DEPENDENCIES
-
-      # START NODE DEPENDENCIES
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "16"
-          cache: yarn
-      - name: Upgrade JS dependencies
-        # ADD YOUR CUSTOM DEPENDENCY UPGRADE COMMANDS BELOW
-        run: |
-          rm -f yarn.lock
-          npx --yes yarn-upgrade-all
-      # END NODE DEPENDENCIES
 
       - name: Detect changes
         id: changes
