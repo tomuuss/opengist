@@ -11,7 +11,7 @@ require (
 	github.com/hashicorp/go-memdb v1.3.4
 	github.com/labstack/echo/v4 v4.11.1
 	github.com/markbates/goth v1.78.0
-	github.com/rs/zerolog v1.30.0
+	github.com/rs/zerolog v1.31.0
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/crypto v0.13.0
 	golang.org/x/text v0.13.0
@@ -49,6 +49,6 @@ require (
 	google.golang.org/protobuf v1.31.0 // indirect
 	modernc.org/libc v1.24.1 // indirect
 	modernc.org/mathutil v1.6.0 // indirect
-	modernc.org/memory v1.7.1 // indirect
+	modernc.org/memory v1.7.2 // indirect
 	modernc.org/sqlite v1.25.0 // indirect
 )
