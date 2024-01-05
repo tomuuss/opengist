@@ -17,8 +17,8 @@ gist.header.clone-http: Klonovat pomocí %s
 gist.header.clone-http-help: Klonovat s pomocí Git pomocí základní autentizace HTTP.
 gist.header.clone-ssh: Klonovat pomocí SSH
 gist.header.clone-ssh-help: Klonovat s pomocí Git pomocí klíče SSH.
-gist.header.embed:
-gist.header.embed-help:
+gist.header.embed: Embed
+gist.header.embed-help: Embed this gist to your website.
 gist.header.download-zip: Stáhnout ZIP
 
 gist.raw: Raw
@@ -182,3 +182,18 @@ admin.gists.private: Soukromé?
 admin.gists.nb-files: Počet souborů
 admin.gists.nb-likes: Počet lajků
 admin.gists.delete_confirm: Opravdu chcete smazat tento gist?
+gist.new.url: URL
+gist.search.found: gists found
+gist.search.no-results: No gists found
+gist.search.help.user: gists created by user
+gist.search.help.title: gists with given title
+gist.search.help.filename: gists having files with given name
+gist.search.help.extension: gists having files with given extension
+gist.search.help.language: gists having files with given language
+settings.link-gitlab-account: Link GitLab account
+settings.unlink-gitlab-account: Unlink GitLab account
+settings.change-username: Change username
+auth.gitlab-oauth: Continue with GitLab account
+admin.actions.sync-previews: Synchronize all gists previews
+admin.actions.reset-hooks: Reset Git server hooks for all repositories
+admin.actions.index-gists: Index all gists
