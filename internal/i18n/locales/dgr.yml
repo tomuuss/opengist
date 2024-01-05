@@ -1,8 +1,8 @@
-gist.public: 'annyeong haseyo'
-gist.unlisted: 'ddd'
-gist.private: 'dddff'
+gist.public: 'rire'
+gist.unlisted: 'Unlisted'
+gist.private: 'Private'
 
-gist.header.like: 'kl'
+gist.header.like: 'Like'
 gist.header.unlike: 'Unlike'
 gist.header.fork: 'Fork'
 gist.header.edit: 'Edit'

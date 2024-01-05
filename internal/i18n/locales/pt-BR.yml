@@ -17,8 +17,6 @@ gist.header.clone-http: Clonar via %s
 gist.header.clone-http-help: Clonar com Git usando autenticação básica HTTP.
 gist.header.clone-ssh: Clonar via SSH
 gist.header.clone-ssh-help: Clonar com Git usando uma chave SSH.
-gist.header.share: Compartilhar
-gist.header.share-help: Copiar link para compartilhar este gist.
 gist.header.download-zip: Baixar ZIP
 
 gist.raw: Bruto
@@ -158,7 +156,6 @@ admin.delete: Excluir
 admin.created_at: Criado
 
 admin.config-link: Esta configuração pode ser %s por um arquivo de configuração YAML e/ou variáveis de ambiente.
-admin.config-link-overridden: sobrescrito
 admin.disable-signup: Desabilitar registro
 admin.disable-signup_help: Proibir a criação de novas contas.
 admin.require-login: Exigir login
@@ -175,3 +172,26 @@ admin.gists.private: Privado
 admin.gists.nb-files: Núm. de arquivos
 admin.gists.nb-likes: Núm. de curtidas
 admin.gists.delete_confirm: Quer excluir este gist?
+gist.header.embed: Embed
+gist.header.embed-help: Embed this gist to your website.
+gist.new.url: URL
+gist.search.found: gists found
+gist.search.no-results: No gists found
+gist.search.help.user: gists created by user
+gist.search.help.title: gists with given title
+gist.search.help.filename: gists having files with given name
+gist.search.help.extension: gists having files with given extension
+gist.search.help.language: gists having files with given language
+settings.link-gitlab-account: Link GitLab account
+settings.unlink-gitlab-account: Unlink GitLab account
+settings.change-username: Change username
+settings.create-password: Create password
+settings.create-password-help: Create your password to login to Opengist via HTTP
+settings.change-password: Change password
+settings.change-password-help: Change your password to login to Opengist via HTTP
+settings.password-label-title: Password
+auth.gitlab-oauth: Continue with GitLab account
+admin.actions.sync-previews: Synchronize all gists previews
+admin.actions.reset-hooks: Reset Git server hooks for all repositories
+admin.actions.index-gists: Index all gists
+admin.config-link-overriden: overridden
