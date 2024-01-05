@@ -7,7 +7,7 @@ gist.header.unlike: Nem tetszik
 gist.header.fork: Fork
 gist.header.edit: Szerkesztés
 gist.header.delete: Törlés
-gist.header.forked-from: "Forkolva innen:"
+gist.header.forked-from: "Forkolva innen"
 gist.header.last-active: Utoljára aktív
 gist.header.select-tab: Fül választása
 gist.header.code: Kód
@@ -98,7 +98,8 @@ settings.unlink-gitea-account: Gitea fiók eltávolítása
 settings.delete-account: Fiók törlése
 settings.delete-account-confirm: Biztosan törölni szeretnéd a fiókod?
 settings.add-ssh-key: SSH kulcs hozzáadása
-settings.add-ssh-key-help: Csak SSH-n kersztül történő pull/push műveleteknél van használva
+settings.add-ssh-key-help: Csak SSH-n kersztül történő pull/push műveleteknél van
+  használva
 settings.add-ssh-key-title: Cím
 settings.add-ssh-key-content: Kulcs
 settings.delete-ssh-key: Törlés
@@ -107,9 +108,11 @@ settings.ssh-key-added-at: "Hozzáadva:"
 settings.ssh-key-never-used: Sosem használt
 settings.ssh-key-last-used: "Utoljára használva:"
 settings.create-password: Jelszó létrehozása
-settings.create-password-help: Hozz létre egy jelszót, hogy bejelentkezhess az OpenGist-be HTTP-n keresztül
+settings.create-password-help: Hozz létre egy jelszót, hogy bejelentkezhess az OpenGist-be
+  HTTP-n keresztül
 settings.change-password: Jelszó megváltoztatása
-settings.change-password-help: Változtasd meg a jelszót, amivel bejelentkezel az OpenGist-be HTTP-n keresztül
+settings.change-password-help: Változtasd meg a jelszót, amivel bejelentkezel az OpenGist-be
+  HTTP-n keresztül
 settings.password-label-title: Jelszó
 
 auth.signup-disabled: Az adminisztrátor kikapcsolta a regisztrációkat
@@ -162,14 +165,16 @@ admin.user: Felhasználó
 admin.delete: Törlés
 admin.created_at: Létrehozva
 
-admin.config-link: Ezt a konfigurációt %s a YAML alapú konfigurációs fájl és/vagy környezeti változók.
+admin.config-link: Ezt a konfigurációt %s a YAML alapú konfigurációs fájl és/vagy
+  környezeti változók.
 admin.config-link-overriden: felülírhatja
 admin.disable-signup: Regisztrációk letiltása
 admin.disable-signup_help: Letiltja a regisztráció lehetőségét.
 admin.require-login: Bejelentkezés szükséges
 admin.require-login_help: Csak bejelentkezett felhasználók láthatják a gisteket.
 admin.disable-login: Bejelentkezés űrlap letiltása
-admin.disable-login_help: Letiltja a bejelentkezés űrlapon keresztüli bejelentkezéseket, OAuth szolgáltatókat ajánlva helyette.
+admin.disable-login_help: Letiltja a bejelentkezés űrlapon keresztüli bejelentkezéseket,
+  OAuth szolgáltatókat ajánlva helyette.
 admin.disable-gravatar: Gravatar kikapcsolása
 admin.disable-gravatar_help: Tiltsd le a Gravatar-t mint profilkép szolgáltató.
 
