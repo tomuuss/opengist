@@ -17,8 +17,8 @@ gist.header.clone-http: "Clone-ozás ezzel: %s"
 gist.header.clone-http-help: Clone-ozás Git HTTP basic hitelesítéssel.
 gist.header.clone-ssh: Clone-ozás SSH-n keresztül
 gist.header.clone-ssh-help: Clone-ozás SSH kulccsal
-gist.header.embed:
-gist.header.embed-help:
+gist.header.embed: Embed
+gist.header.embed-help: Embed this gist to your website.
 gist.header.download-zip: ZIP archívum letöltése
 
 gist.raw: Eredeti
@@ -98,8 +98,7 @@ settings.unlink-gitea-account: Gitea fiók eltávolítása
 settings.delete-account: Fiók törlése
 settings.delete-account-confirm: Biztosan törölni szeretnéd a fiókod?
 settings.add-ssh-key: SSH kulcs hozzáadása
-settings.add-ssh-key-help: Csak SSH-n kersztül történő pull/push műveleteknél van
-  használva
+settings.add-ssh-key-help: Csak SSH-n kersztül történő pull/push műveleteknél van használva
 settings.add-ssh-key-title: Cím
 settings.add-ssh-key-content: Kulcs
 settings.delete-ssh-key: Törlés
@@ -108,11 +107,9 @@ settings.ssh-key-added-at: "Hozzáadva:"
 settings.ssh-key-never-used: Sosem használt
 settings.ssh-key-last-used: "Utoljára használva:"
 settings.create-password: Jelszó létrehozása
-settings.create-password-help: Hozz létre egy jelszót, hogy bejelentkezhess az OpenGist-be
-  HTTP-n keresztül
+settings.create-password-help: Hozz létre egy jelszót, hogy bejelentkezhess az OpenGist-be HTTP-n keresztül
 settings.change-password: Jelszó megváltoztatása
-settings.change-password-help: Változtasd meg a jelszót, amivel bejelentkezel az OpenGist-be
-  HTTP-n keresztül
+settings.change-password-help: Változtasd meg a jelszót, amivel bejelentkezel az OpenGist-be HTTP-n keresztül
 settings.password-label-title: Jelszó
 
 auth.signup-disabled: Az adminisztrátor kikapcsolta a regisztrációkat
@@ -165,16 +162,14 @@ admin.user: Felhasználó
 admin.delete: Törlés
 admin.created_at: Létrehozva
 
-admin.config-link: Ezt a konfigurációt %s a YAML alapú konfigurációs fájl és/vagy
-  környezeti változók.
+admin.config-link: Ezt a konfigurációt %s a YAML alapú konfigurációs fájl és/vagy környezeti változók.
 admin.config-link-overriden: felülírhatja
 admin.disable-signup: Regisztrációk letiltása
 admin.disable-signup_help: Letiltja a regisztráció lehetőségét.
 admin.require-login: Bejelentkezés szükséges
 admin.require-login_help: Csak bejelentkezett felhasználók láthatják a gisteket.
 admin.disable-login: Bejelentkezés űrlap letiltása
-admin.disable-login_help: Letiltja a bejelentkezés űrlapon keresztüli bejelentkezéseket,
-  OAuth szolgáltatókat ajánlva helyette.
+admin.disable-login_help: Letiltja a bejelentkezés űrlapon keresztüli bejelentkezéseket, OAuth szolgáltatókat ajánlva helyette.
 admin.disable-gravatar: Gravatar kikapcsolása
 admin.disable-gravatar_help: Tiltsd le a Gravatar-t mint profilkép szolgáltató.
 
@@ -185,3 +180,18 @@ admin.gists.private: Privát ?
 admin.gists.nb-files: Fájlok száma
 admin.gists.nb-likes: Kedv. száma
 admin.gists.delete_confirm: Biztosan törlöd a gistet?
+gist.new.url: URL
+gist.search.found: gists found
+gist.search.no-results: No gists found
+gist.search.help.user: gists created by user
+gist.search.help.title: gists with given title
+gist.search.help.filename: gists having files with given name
+gist.search.help.extension: gists having files with given extension
+gist.search.help.language: gists having files with given language
+settings.link-gitlab-account: Link GitLab account
+settings.unlink-gitlab-account: Unlink GitLab account
+settings.change-username: Change username
+auth.gitlab-oauth: Continue with GitLab account
+admin.actions.sync-previews: Synchronize all gists previews
+admin.actions.reset-hooks: Reset Git server hooks for all repositories
+admin.actions.index-gists: Index all gists
