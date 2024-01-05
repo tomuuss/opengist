@@ -14,11 +14,12 @@ gist.header.code: Code
 gist.header.revisions: Révisions
 gist.header.revision: Révision
 gist.header.clone-http: Cloner via %s
-gist.header.clone-http-help: Cloner avec Git en utilisant l'authentification HTTP basic.
+gist.header.clone-http-help: Cloner avec Git en utilisant l'authentification HTTP
+  basic.
 gist.header.clone-ssh: Cloner via SSH
 gist.header.clone-ssh-help: Cloner avec Git en utilisant une clé SSH.
-gist.header.embed:
-gist.header.embed-help:
+gist.header.embed: Intégration
+gist.header.embed-help: Intégrer ce gist dans une page web.
 gist.header.download-zip: Télécharger en ZIP
 
 gist.raw: Brut
@@ -98,7 +99,8 @@ settings.unlink-gitea-account: Détacher le compte Gitea
 settings.delete-account: Supprimer le compte
 settings.delete-account-confirm: Êtes-vous sûr de vouloir supprimer votre compte ?
 settings.add-ssh-key: Ajouter une clé SSH
-settings.add-ssh-key-help: Utilisé uniquement pour pull/push des gists avec Git via SSH
+settings.add-ssh-key-help: Utilisé uniquement pour pull/push des gists avec Git via
+  SSH
 settings.add-ssh-key-title: Titre
 settings.add-ssh-key-content: Clé
 settings.delete-ssh-key: Supprimer
@@ -157,16 +159,20 @@ admin.user: Utilisateur
 admin.delete: Supprimer
 admin.created_at: Créé
 
-admin.config-link: Cette configuration peut être %s par un fichier de configuration YAML et/ou des variables d'environnement.
+admin.config-link: Cette configuration peut être %s par un fichier de configuration
+  YAML et/ou des variables d'environnement.
 admin.config-link-overriden: remplacée
 admin.disable-signup: Désactiver l'inscription
 admin.disable-signup_help: Interdire la création de nouveaux comptes.
 admin.require-login: Exiger la connexion
-admin.require-login_help: Obliger les utilisateurs à être connectés pour voir les gists.
+admin.require-login_help: Obliger les utilisateurs à être connectés pour voir les
+  gists.
 admin.disable-login: Désactiver le formulaire de connexion
-admin.disable-login_help: Interdire la connexion via le formulaire de connexion pour forcer l'utilisation des fournisseurs OAuth à la place.
+admin.disable-login_help: Interdire la connexion via le formulaire de connexion pour
+  forcer l'utilisation des fournisseurs OAuth à la place.
 admin.disable-gravatar: Désactiver Gravatar
-admin.disable-gravatar_help: Désactiver l'utilisation de Gravatar comme fournisseur d'avatar.
+admin.disable-gravatar_help: Désactiver l'utilisation de Gravatar comme fournisseur
+  d'avatar.
 
 admin.users.delete_confirm: Voulez-vous supprimer cet utilisateur ?
 
@@ -175,3 +181,10 @@ admin.gists.private: Privé ?
 admin.gists.nb-files: Nb. de fichiers
 admin.gists.nb-likes: Nb. de j'aime
 admin.gists.delete_confirm: Voulez-vous supprimer ce gist ?
+gist.new.url: URL
+gist.search.found: gists trouvés
+gist.search.no-results: Pas de gists trouvés
+gist.search.help.user: gists crées par un utilisateur
+gist.search.help.title: gists avec un titre spécifique
+gist.search.help.filename: gists qui ont des fichiers avec un nom spécifique
+gist.search.help.extension: gists qui ont des fichiers avec une extension spécifique
