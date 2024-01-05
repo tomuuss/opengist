@@ -17,8 +17,8 @@ gist.header.clone-http: 通过 %s 克隆
 gist.header.clone-http-help: 使用 Git 通过 HTTP 基础认证克隆。
 gist.header.clone-ssh: 通过 SSH 克隆
 gist.header.clone-ssh-help: 使用 Git 通过 SSH 密钥克隆。
-gist.header.embed:
-gist.header.embed-help:
+gist.header.embed: Embed
+gist.header.embed-help: Embed this gist to your website.
 gist.header.download-zip: 下载 ZIP
 
 gist.raw: 原始文件
@@ -175,3 +175,23 @@ admin.gists.private: 私有？
 admin.gists.nb-files: 文件数
 admin.gists.nb-likes: 喜欢数
 admin.gists.delete_confirm: 你想要删除此 Gist 吗？
+gist.new.url: URL
+gist.search.found: gists found
+gist.search.no-results: No gists found
+gist.search.help.user: gists created by user
+gist.search.help.title: gists with given title
+gist.search.help.filename: gists having files with given name
+gist.search.help.extension: gists having files with given extension
+gist.search.help.language: gists having files with given language
+settings.link-gitlab-account: Link GitLab account
+settings.unlink-gitlab-account: Unlink GitLab account
+settings.change-username: Change username
+settings.create-password: Create password
+settings.create-password-help: Create your password to login to Opengist via HTTP
+settings.change-password: Change password
+settings.change-password-help: Change your password to login to Opengist via HTTP
+settings.password-label-title: Password
+auth.gitlab-oauth: Continue with GitLab account
+admin.actions.sync-previews: Synchronize all gists previews
+admin.actions.reset-hooks: Reset Git server hooks for all repositories
+admin.actions.index-gists: Index all gists
