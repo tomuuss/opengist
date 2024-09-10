@@ -1,5 +1,7 @@
 # Opengist
 
+<img height="108px" src="https://raw.githubusercontent.com/thomiceli/opengist/master/public/opengist.svg" alt="Opengist" align="right" />
+
 Opengist is a **self-hosted** pastebin **powered by Git**. All snippets are stored in a Git repository and can be
 read and/or modified using standard Git commands, or with the web interface. 
 It is similiar to [GitHub Gist](https://gist.github.com/), but open-source and could be self-hosted.
@@ -47,7 +49,7 @@ Version **2.28** or later is recommended as the app has not been tested with old
 * Backend Web Framework: [Echo](https://echo.labstack.com/)
 * ORM: [GORM](https://gorm.io/)
 * Frontend libraries:
-  * [Tailwind CSS](https://tailwindcss.com/)
+  * [TailwindCSS](https://tailwindcss.com/)
   * [CodeMirror](https://codemirror.net/)
   * [Day.js](https://day.js.org/)
   * [highlight.js](https://highlightjs.org/)
