@@ -37,7 +37,7 @@ export default {
           </a>
         </div>
         <div class="border border-1 mt-6 px-5 py-3 rounded-md shadow-sm ">
-          <code class="select-all ">docker run --name <span class="text-indigo-700 dark:text-indigo-300 font-bold">opengist</span> --restart always -p <span class="text-indigo-700 dark:text-indigo-300 font-bold">6157</span>:6157 -v "<span class="text-indigo-700 dark:text-indigo-300 font-bold">$HOME/.opengist</span>:/opengist" ghcr.io/thomiceli/opengist:1</code>
+          <code class="select-all ">docker run --name <span class="text-indigo-700 dark:text-indigo-300 font-bold">opengist</span> -p <span class="text-indigo-700 dark:text-indigo-300 font-bold">6157</span>:6157 -v "<span class="text-indigo-700 dark:text-indigo-300 font-bold">$HOME/.opengist</span>:/opengist" ghcr.io/thomiceli/opengist:1</code>
         </div>
       </div>
     </header>

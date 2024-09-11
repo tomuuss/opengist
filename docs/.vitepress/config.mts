@@ -6,6 +6,7 @@ export default defineConfig({
     description: "Documention for Opengist",
     rewrites: {
         'index.md': 'index.md',
+        'introduction.md': 'docs/index.md',
         ':path(.*)': 'docs/:path'
     },
     themeConfig: {
