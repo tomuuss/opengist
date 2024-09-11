@@ -19,23 +19,23 @@ export default defineConfig({
         ],
 
         sidebar: {
-            docs: [
+            '/docs/': [
                 {
                     text: '', items: [
                         {text: 'Introduction', link: '/docs'},
-                        {text: 'Installation', link: '/installation', items: [
+                        {text: 'Installation', link: '/docs/installation', items: [
                                 {text: 'Docker', link: '/installation/docker'},
                                 {text: 'Binary', link: '/installation/binary'},
                                 {text: 'Source', link: '/installation/source'},
                             ],
                             collapsed: true
                         },
-                        {text: 'Update', link: '/update'},
+                        {text: 'Update', link: '/docs/update'},
                     ], collapsed: false
                 }
         ,
             {
-                text: 'Configuration', base: '/configuration', items: [
+                text: 'Configuration', base: '/docs/configuration', items: [
                     {text: 'Configure Opengist', link: '/configure'},
                     {text: 'OAuth Providers', link: '/oauth-providers'},
                     {text: 'Custom assets', link: '/custom-assets'},
@@ -44,7 +44,7 @@ export default defineConfig({
                 ], collapsed: false
             },
             {
-                text: 'Usage', base: '/usage', items: [
+                text: 'Usage', base: '/docs/usage', items: [
                     {text: 'Init via Git', link: '/init-via-git'},
                     {text: 'Embed Gist', link: '/embed'},
                     {text: 'Gist as JSON', link: '/gist-json'},
@@ -53,7 +53,7 @@ export default defineConfig({
                 ], collapsed: false
             },
             {
-                text: 'Administration', base: '/administration', items: [
+                text: 'Administration', base: '/docs/administration', items: [
                     {text: 'Run with systemd', link: '/run-with-systemd'},
                     {text: 'Reverse proxy', items: [
                         {text: 'Nginx', link: '/nginx-reverse-proxy'},
@@ -63,7 +63,7 @@ export default defineConfig({
                 ], collapsed: false
             },
             {
-                text: 'Contributing', base: '/contributing', items: [
+                text: 'Contributing', base: '/docs/contributing', items: [
                     {text: 'Community', link: '/community'},
                     {text: 'Development', link: '/development'},
                 ], collapsed: false
