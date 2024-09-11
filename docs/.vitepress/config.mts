@@ -2,12 +2,16 @@ import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: "Opengist Docs",
+    title: "Opengist",
     description: "Documention for Opengist",
-    base: '/docs/master/',
+    rewrites: {
+        'index.md': 'index.md',
+        ':path(.*)': 'docs/:path'
+    },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         logo: 'https://raw.githubusercontent.com/thomiceli/opengist/master/public/opengist.svg',
+        logoLink: '/',
         nav: [
             { text: 'Demo', link: 'https://demo.opengist.io' },
             { text: 'Translate', link: 'https://tr.opengist.io' }
@@ -16,7 +20,7 @@ export default defineConfig({
         sidebar: [
             {
                 text: '', items: [
-                    {text: 'Introduction', link: '/'},
+                    {text: 'Introduction', link: '/docs'},
                     {text: 'Installation', link: '/installation', items: [
                         {text: 'Docker', link: '/installation/docker'},
                         {text: 'Binary', link: '/installation/binary'},
@@ -29,7 +33,7 @@ export default defineConfig({
             },
             {
                 text: 'Configuration', base: '/configuration', items: [
-                    {text: 'Configure Opengist', link: '/index'},
+                    {text: 'Configure Opengist', link: '/configure'},
                     {text: 'OAuth Providers', link: '/oauth-providers'},
                     {text: 'Custom assets', link: '/custom-assets'},
                     {text: 'Custom links', link: '/custom-links'},
@@ -68,10 +72,11 @@ export default defineConfig({
             {icon: 'github', link: 'https://github.com/thomiceli/opengist'}
         ],
         editLink: {
-            pattern: 'https://github.com/thomiceli/opengist/edit/master/docs/:path'
+            pattern: 'https://github.com/thomiceli/opengist/edit/stable/docs/:path'
         },
         // @ts-ignore
         lastUpdated: true,
+
     },
     ignoreDeadLinks: true
 })
