@@ -18,20 +18,22 @@ export default defineConfig({
             { text: 'Translate', link: 'https://tr.opengist.io' }
         ],
 
-        sidebar: [
-            {
-                text: '', items: [
-                    {text: 'Introduction', link: '/docs'},
-                    {text: 'Installation', link: '/installation', items: [
-                        {text: 'Docker', link: '/installation/docker'},
-                        {text: 'Binary', link: '/installation/binary'},
-                        {text: 'Source', link: '/installation/source'},
-                        ],
-                        collapsed: true
-                    },
-                    {text: 'Update', link: '/update'},
-                ], collapsed: false
-            },
+        sidebar: {
+            docs: [
+                {
+                    text: '', items: [
+                        {text: 'Introduction', link: '/docs'},
+                        {text: 'Installation', link: '/installation', items: [
+                                {text: 'Docker', link: '/installation/docker'},
+                                {text: 'Binary', link: '/installation/binary'},
+                                {text: 'Source', link: '/installation/source'},
+                            ],
+                            collapsed: true
+                        },
+                        {text: 'Update', link: '/update'},
+                    ], collapsed: false
+                }
+        ,
             {
                 text: 'Configuration', base: '/configuration', items: [
                     {text: 'Configure Opengist', link: '/configure'},
@@ -67,7 +69,7 @@ export default defineConfig({
                 ], collapsed: false
             },
 
-        ],
+        ]},
 
         socialLinks: [
             {icon: 'github', link: 'https://github.com/thomiceli/opengist'}

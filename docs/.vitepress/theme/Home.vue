@@ -2,8 +2,6 @@
 import { withBase } from 'vitepress';
 import './theme.css'
 
-console.log(withBase('opengist-demo.png'))
-
 export default {
 
   setup() {
@@ -42,7 +40,9 @@ export default {
       </div>
     </header>
 
-    <div class="relative w-full sm:max-w-7xl mx-auto overflow-auto"><img class="block w-[200vw] max-w-none sm:w-full h-auto" :src="withBase('opengist-demo.png')" alt="demo-opengist-screenshot"></div>
+    <div class="relative w-full sm:max-w-7xl mx-auto overflow-auto">
+      <img class="block w-[200vw] max-w-none sm:w-full h-auto" :src="withBase('/opengist-demo.png')" alt="demo-opengist-screenshot" />
+    </div>
 
   </main>
 </template>
