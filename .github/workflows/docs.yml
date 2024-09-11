@@ -1,4 +1,4 @@
-name: Build and Deploy VitePress
+name: Build / Deploy docs
 
 on:
   push:
