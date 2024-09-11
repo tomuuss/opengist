@@ -1,6 +1,6 @@
 <script>
 import { withBase } from 'vitepress';
-import './gg.css'
+import './theme.css'
 
 console.log(withBase('opengist-demo.png'))
 
