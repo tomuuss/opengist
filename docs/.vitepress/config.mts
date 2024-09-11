@@ -20,20 +20,19 @@ export default defineConfig({
 
         sidebar: {
             '/docs/': [
-                {
-                    text: '', items: [
-                        {text: 'Introduction', link: '/docs'},
-                        {text: 'Installation', link: '/docs/installation', items: [
-                                {text: 'Docker', link: '/installation/docker'},
-                                {text: 'Binary', link: '/installation/binary'},
-                                {text: 'Source', link: '/installation/source'},
-                            ],
-                            collapsed: true
-                        },
-                        {text: 'Update', link: '/docs/update'},
-                    ], collapsed: false
-                }
-        ,
+            {
+                text: '', items: [
+                    {text: 'Introduction', link: '/docs'},
+                    {text: 'Installation', link: '/docs/installation', items: [
+                        {text: 'Docker', link: '/docs/installation/docker'},
+                        {text: 'Binary', link: '/docs/installation/binary'},
+                        {text: 'Source', link: '/docs/installation/source'},
+                        ],
+                        collapsed: true
+                    },
+                    {text: 'Update', link: '/docs/update'},
+                ], collapsed: false
+            },
             {
                 text: 'Configuration', base: '/docs/configuration', items: [
                     {text: 'Configure Opengist', link: '/configure'},
