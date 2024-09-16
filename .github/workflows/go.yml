@@ -1,9 +1,6 @@
 name: "Go CI"
 on:
   push:
-    branches:
-      - master
-      - 'dev-*'
   workflow_dispatch:
     
   pull_request:
