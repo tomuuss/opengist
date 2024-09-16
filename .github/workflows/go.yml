@@ -46,19 +46,17 @@ jobs:
       - name: Check translations
         run: make check-tr
 
-  test:
+  test-db:
     strategy:
       fail-fast: false
       matrix:
-        os: ["ubuntu-latest", "macOS-latest", "windows-latest"]
+        os: ["ubuntu-latest"]
         go: ["1.22"]
         include:
-          - os: ubuntu-latest
-            database: postgres
+          - database: postgres
             image: postgres:16
             port: 5432
-          - os: ubuntu-latest
-            database: mysql
+          - database: mysql
             image: mysql:8
             port: 3306
 
@@ -78,7 +76,6 @@ jobs:
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
-    if: matrix.database != null
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -90,8 +87,22 @@ jobs:
 
       - name: Run tests
         run: make test TEST_DB_TYPE=${{ matrix.database }}
-        if: runner.os == 'Linux' && matrix.database != null
+
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ "ubuntu-latest", "macOS-latest", "windows-latest" ]
+        go: [ "1.22" ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Go ${{ matrix.go }}
+        uses: actions/setup-go@v4
+        with:
+          go-version: ${{ matrix.go }}
 
       - name: Run tests
         run: make test
-        if: matrix.database == null
