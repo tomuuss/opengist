@@ -171,6 +171,10 @@ func setup(t *testing.T) {
 	err = db.Setup(databaseDsn, true)
 	require.NoError(t, err, "Could not initialize database")
 
+	if err != nil {
+		log.Fatal().Err(err).Msg("Could not initialize database")
+	}
+
 	err = memdb.Setup()
 	require.NoError(t, err, "Could not initialize in memory database")
 
