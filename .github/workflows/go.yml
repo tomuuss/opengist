@@ -53,7 +53,31 @@ jobs:
       matrix:
         os: ["ubuntu-latest", "macOS-latest", "windows-latest"]
         go: ["1.22"]
+        database: ["sqlite", "postgres", "mysql"]
+        include:
+          - database: postgres
+            image: postgres:16
+            port: 5432
+          - database: mysql
+            image: mysql:8
+            port: 3306
     runs-on: ${{ matrix.os }}
+    services:
+      database:
+        image: ${{ matrix.image }}
+        ports:
+          - ${{ matrix.port }}
+        env:
+          POSTGRES_PASSWORD: opengist
+          POSTGRES_DB: opengist_test
+          MYSQL_ROOT_PASSWORD: opengist
+          MYSQL_DATABASE: opengist_test
+        options: >-
+          --health-cmd ${{ matrix.database == 'postgres' && 'pg_isready' || 'mysqladmin ping' }}
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -64,5 +88,5 @@ jobs:
           go-version: ${{ matrix.go }}
 
       - name: Run tests
-        run: make test
+        run: make test TEST_DB_TYPE=${{ matrix.database }}
 
