@@ -53,10 +53,12 @@ jobs:
         os: ["ubuntu-latest"]
         go: ["1.22"]
         include:
-          - database: postgres
+          - os: "ubuntu-latest"
+            database: postgres
             image: postgres:16
             port: 5432
-          - database: mysql
+          - os: "ubuntu-latest"
+            database: mysql
             image: mysql:8
             port: 3306
 
