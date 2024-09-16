@@ -9,6 +9,7 @@ on:
 
 jobs:
   lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,6 +31,7 @@ jobs:
         run: make fmt check_changes
 
   check:
+    name: Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -47,6 +49,7 @@ jobs:
         run: make check-tr
 
   test-db:
+    name: Test
     strategy:
       fail-fast: false
       matrix:
@@ -90,11 +93,13 @@ jobs:
         run: make test TEST_DB_TYPE=${{ matrix.database }}
 
   test:
+    name: Test
     strategy:
       fail-fast: false
       matrix:
-        os: [ "ubuntu-latest", "macOS-latest", "windows-latest" ]
-        go: [ "1.22" ]
+        os: ["ubuntu-latest", "macOS-latest", "windows-latest"]
+        go: ["1.22"]
+        database: ["sqlite"]
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
@@ -106,4 +111,4 @@ jobs:
           go-version: ${{ matrix.go }}
 
       - name: Run tests
-        run: make test
+        run: make test TEST_DB_TYPE=${{ matrix.database }}
