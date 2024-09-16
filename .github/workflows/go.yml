@@ -52,13 +52,12 @@ jobs:
       matrix:
         os: ["ubuntu-latest"]
         go: ["1.22"]
+        database: [postgres, mysql]
         include:
-          - os: "ubuntu-latest"
-            database: postgres
+          - database: postgres
             image: postgres:16
             port: 5432
-          - os: "ubuntu-latest"
-            database: mysql
+          - database: mysql
             image: mysql:8
             port: 3306
 
