@@ -1,5 +1,6 @@
 .PHONY: all all_crosscompile install build_frontend build_backend build build_crosscompile build_docker build_dev_docker run_dev_docker watch_frontend watch_backend watch clean clean_docker check_changes go_mod fmt test check-tr
 
+
 # Specify the name of your Go binary output
 BINARY_NAME := opengist
 GIT_TAG := $(shell git describe --tags)
